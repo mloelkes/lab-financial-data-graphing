@@ -1,2 +1,13 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Bitcoin Chart</h1>
+<form>
+    <label>Start:</label>
+    <input type="date" name="start" onchange="handleStartDateChange(event)">
+    <label>End:</label>
+    <input type="date" name="end" onchange="handleEndDateChange(event)">
+    <label>Currency:</label>
+    <select name="currency" onchange="handleCurrencyChange(event)">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+    </select>
+</form>
+<canvas id="myChart" width="400" height="400"></canvas>
